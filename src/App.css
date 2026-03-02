@@ -71,7 +71,7 @@
   width: 18px;
   height: 18px;
   cursor: pointer;
-  accent-color: #667eea;
+  accent-color: #ff6b9d;
 }
 
 .select,
@@ -89,8 +89,8 @@
 .select:focus,
 .input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #ff6b9d;
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
 }
 
 .hint {
@@ -134,14 +134,14 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
   color: white;
   flex: 1;
 }
 
 .btn-primary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 107, 157, 0.4);
 }
 
 .btn-secondary {
@@ -156,34 +156,34 @@
 }
 
 .btn-success {
-  background: #28a745;
+  background: #ff6b9d;
   color: white;
 }
 
 .btn-success:hover:not(:disabled) {
-  background: #218838;
+  background: #ff4d87;
   transform: translateY(-2px);
 }
 
 .btn-info {
-  background: #17a2b8;
+  background: #ff85ad;
   color: white;
 }
 
 .btn-info:hover:not(:disabled) {
-  background: #138496;
+  background: #ff6b9d;
   transform: translateY(-2px);
 }
 
 .btn-link {
   background: transparent;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: #ff6b9d;
+  border: 2px solid #ff6b9d;
   margin-top: 10px;
 }
 
 .btn-link:hover {
-  background: #667eea;
+  background: #ff6b9d;
   color: white;
 }
 
@@ -224,8 +224,8 @@
 
 .textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #ff6b9d;
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
 }
 
 .textarea::placeholder {
@@ -247,8 +247,8 @@
 
 /* Info Box */
 .info-box {
-  background: #e7f3ff;
-  border: 2px solid #b3d9ff;
+  background: #ffe0ec;
+  border: 2px solid #ffc0d9;
   border-radius: 8px;
   padding: 15px;
   display: flex;
@@ -257,7 +257,7 @@
 }
 
 .info-box strong {
-  color: #004085;
+  color: #c44569;
   font-size: 0.95rem;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .info-box small {
-  color: #004085;
+  color: #c44569;
   font-size: 0.85rem;
   opacity: 0.8;
 }
@@ -289,7 +289,7 @@
 
 .info-panel h3 {
   margin-bottom: 15px;
-  color: #667eea;
+  color: #ff6b9d;
   font-size: 1.3rem;
 }
 

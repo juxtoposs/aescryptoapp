@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🔐 AES Encryption/Decryption Tool</h1>
+        <h1>AES Encryption/Decryption Tool</h1>
         <p>Secure text encryption using Advanced Encryption Standard</p>
       </header>
 
@@ -136,9 +136,9 @@ function App() {
               <option value="CFB">CFB (Cipher Feedback)</option>
             </select>
             <small className="hint">
-              {mode === 'ECB' && '⚠️ ECB is not recommended for production use'}
-              {mode === 'CBC' && '✓ Secure mode with IV'}
-              {mode === 'CFB' && '✓ Secure stream cipher mode'}
+              {mode === 'ECB' && 'WARNING: ECB is not recommended for production use'}
+              {mode === 'CBC' && 'Secure mode with IV'}
+              {mode === 'CFB' && 'Secure stream cipher mode'}
             </small>
           </div>
 
@@ -188,10 +188,10 @@ function App() {
 
           <div className="button-row">
             <button onClick={handleProcess} className="btn btn-primary">
-              {operation === 'encrypt' ? '🔒 Encrypt' : '🔓 Decrypt'}
+              {operation === 'encrypt' ? 'Encrypt' : 'Decrypt'}
             </button>
             <button onClick={handleClear} className="btn btn-secondary">
-              🗑️ Clear
+              Clear
             </button>
           </div>
 
@@ -201,10 +201,10 @@ function App() {
               disabled={!outputText || operation !== 'encrypt'}
               className="btn btn-success"
             >
-              💾 Save Encrypted File
+              Save Encrypted File
             </button>
             <label className="btn btn-info file-label">
-              📂 Load Encrypted File
+              Load Encrypted File
               <input
                 ref={fileInputRef}
                 type="file"
@@ -219,7 +219,7 @@ function App() {
             onClick={() => setShowInfo(!showInfo)} 
             className="btn btn-link"
           >
-            {showInfo ? '▼' : '▶'} How AES Works
+            {showInfo ? 'Hide' : 'Show'} How AES Works
           </button>
 
           {showInfo && <InfoPanel />}
@@ -246,7 +246,7 @@ function App() {
 
           {error && (
             <div className="alert alert-error">
-              ⚠️ {error}
+              WARNING: {error}
             </div>
           )}
 
@@ -280,7 +280,7 @@ function App() {
 function InfoPanel() {
   return (
     <div className="info-panel">
-      <h3>📚 AES Overview</h3>
+      <h3>AES Overview</h3>
       
       <section>
         <h4>What is AES?</h4>
